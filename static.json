@@ -1,0 +1,7 @@
+{
+    "root": "src/",
+    "routes": {
+        "/**": "server.js"
+    },
+    "https_only": true
+}
