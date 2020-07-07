@@ -3,13 +3,7 @@
   "version": "1.0.0",
   "description": "A personal website created for myself.",
   "main": "src/index.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "postinstall": "npm run build"
-  },
+  "scripts": {},
   "author": "Robert Macaibay",
   "license": "ISC",
   "dependencies": {
