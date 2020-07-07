@@ -4,7 +4,8 @@
   "description": "A personal website created for myself.",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Robert Macaibay",
   "license": "ISC",
