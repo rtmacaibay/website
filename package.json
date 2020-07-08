@@ -4,24 +4,34 @@
   "description": "A personal website created for myself.",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start-client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start": "npm run build && nodemon server/server.js"
   },
   "author": "Robert Macaibay",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
+    "nodemon": "^2.0.4",
     "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
   },
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rtmacaibay/personalwebsite.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rtmacaibay/personalwebsite/issues"
-  },
-  "homepage": "https://github.com/rtmacaibay/personalwebsite#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

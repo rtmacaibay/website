@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-const html = require('./index.hmtl');
+import App from './App';
 
 ReactDOM.render(
-  html,
+  <App />,
   document.getElementById('root')
 );
