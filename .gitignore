@@ -1,4 +1,8 @@
+# Project dependencies
+.cache
 node_modules
-temp.txt
+yarn-error.log
 
-build
+# Build directory
+/public
+.DS_Store
