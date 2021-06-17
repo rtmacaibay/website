@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import me from '../images/me.png'
+import resume from '../docs/macaibay-resume.pdf'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -34,15 +35,6 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
               props.onOpenArticle('about')
             }}
           >
@@ -52,10 +44,37 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
+              props.onOpenArticle('study')
+            }}
+          >
+            Study
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('work')
+            }}
+          >
+            Work
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
               props.onOpenArticle('contact')
             }}
           >
             Contact
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              window.open(resume)
+            }}
+          >
+            Résumé
           </button>
         </li>
       </ul>
