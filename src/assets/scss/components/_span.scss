@@ -1,0 +1,35 @@
+///
+/// Dimension by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Span */
+
+    span {
+
+        &.skill {
+            background-color: rgb(24, 26, 27);
+            color: rgba(232, 230, 227, 0.75);
+            box-sizing: border-box;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 15px;
+            height: 35px;
+            margin: 5px 5px 0 0;
+            padding-top: 3px;
+            padding-left: 20px;
+            padding-right: 20px;
+            vertical-align: middle;
+            text-align: center;
+
+            &.study {
+                border: 1.5px solid #60B8F8;
+            }
+
+            &.extra {
+                border: 1.5px solid #00543C;
+            }
+        }
+
+    }

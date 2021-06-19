@@ -80,6 +80,10 @@
 			padding-bottom: 0.5rem;
 			margin: 0 0 (_size(element-margin) * 1) 0;
 		}
+
+		&.skills {
+			padding-top: 1.5rem;
+		}
 	}
 
 	h1 {
