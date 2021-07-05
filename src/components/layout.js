@@ -5,8 +5,6 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/scss/main.scss';
 
-import me from '../images/bigme.jpg';
-
 const Layout = ({ children, location }) => {
   let content;
 
@@ -42,12 +40,12 @@ const Layout = ({ children, location }) => {
               { property: 'og:url', content: 'https://macaibay.com'},
               { property: 'og:title', content: 'Robert Macaibay | SWE'},
               { property: 'og:description', content: 'Robert Macaibay | Software Engineer | Looking for SWE positions! | Filipino-American | Java, C, C++, JavaScript, React'},
-              { property: 'og:image', content: {me}},
+              { property: 'og:image', content: 'https://i.imgur.com/NHvRWwg.jpg'},
               { property: 'twitter:card', content: 'summary_large_image'},
               { property: 'twitter:url', content: 'https://macaibay.com'},
               { property: 'twitter:title', content: 'Robert Macaibay | SWE'},
               { property: 'twitter:description', content: 'Robert Macaibay | Software Engineer | Looking for SWE positions! | Filipino-American | Java, C, C++, JavaScript, React'},
-              { property: 'twitter:image', content: {me}}
+              { property: 'twitter:image', content: 'https://i.imgur.com/NHvRWwg.jpg'}
             ]}
           >
             <html lang="en" />
