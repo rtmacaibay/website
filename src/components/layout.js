@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/scss/main.scss';
 
-import me from '../images/me.png';
+import me from '../images/bigme.png';
 
 const Layout = ({ children, location }) => {
   let content;
@@ -36,9 +36,18 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Robert Macaibay | Software Engineer | Looking for SWE positions!' },
-              { name: 'keywords', content: 'SWE, software engineer, programmer, personal' },
-              { name: 'image', content: {me}},
+              { name: 'description', content: 'Robert Macaibay | Software Engineer | Looking for SWE positions! | Filipino-American | Java, C, C++, JavaScript, React' },
+              { name: 'keywords', content: 'SWE, software engineer, programmer, personal, Java, C, C++, React, JavaScript, Gatsby, Backend, Frontend, Full-Stack' },
+              { property: 'og:type', content: 'website'},
+              { property: 'og:url', content: 'https://macaibay.com'},
+              { property: 'og:title', content: 'Robert Macaibay | SWE'},
+              { property: 'og:description', content: 'Robert Macaibay | Software Engineer | Looking for SWE positions! | Filipino-American | Java, C, C++, JavaScript, React'},
+              { property: 'og:image', content: {me}},
+              { property: 'twitter:card', content: 'summary_large_image'},
+              { property: 'twitter:url', content: 'https://macaibay.com'},
+              { property: 'twitter:title', content: 'Robert Macaibay | SWE'},
+              { property: 'twitter:description', content: 'Robert Macaibay | Software Engineer | Looking for SWE positions! | Filipino-American | Java, C, C++, JavaScript, React'},
+              { property: 'twitter:image', content: {me}}
             ]}
           >
             <html lang="en" />
