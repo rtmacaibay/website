@@ -5,6 +5,8 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/scss/main.scss';
 
+import me from '../images/me.png';
+
 const Layout = ({ children, location }) => {
   let content;
 
@@ -36,6 +38,7 @@ const Layout = ({ children, location }) => {
             meta={[
               { name: 'description', content: 'Robert Macaibay | Software Engineer | Looking for SWE positions!' },
               { name: 'keywords', content: 'SWE, software engineer, programmer, personal' },
+              { name: 'image', content: {me}},
             ]}
           >
             <html lang="en" />
