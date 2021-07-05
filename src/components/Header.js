@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import PropTypes from 'prop-types';
+import React from 'react';
 
-import me from '../images/me.png'
-import resume from '../docs/macaibay-resume.pdf'
+import me from '../images/me.png';
+import resume from '../docs/macaibay-resume.pdf';
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -26,7 +26,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('intro');
             }}
           >
             Intro
@@ -35,7 +35,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('about');
             }}
           >
             About
@@ -44,7 +44,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('study')
+              props.onOpenArticle('study');
             }}
           >
             Study
@@ -53,7 +53,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('work')
+              props.onOpenArticle('work');
             }}
           >
             Work
@@ -62,7 +62,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('projects')
+              props.onOpenArticle('projects');
             }}
           >
             Projects
@@ -71,7 +71,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('contact')
+              props.onOpenArticle('contact');
             }}
           >
             Contact
@@ -80,7 +80,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              window.open(resume)
+              window.open(resume);
             }}
           >
             Résumé
@@ -89,11 +89,11 @@ const Header = props => (
       </ul>
     </nav>
   </header>
-)
+);
 
 Header.propTypes = {
   onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
-}
+};
 
-export default Header
+export default Header;

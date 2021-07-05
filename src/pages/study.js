@@ -1,28 +1,36 @@
-import IndexPage from './index'
+import IndexPage from './index';
+
+const isBrowser = typeof window !== 'undefined';
 
 class StudyPage extends IndexPage {
-    constructor(props) {
-        super(props)
-        this.state = {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isArticleVisible: true,
+      timeout: true,
+      articleTimeout: true,
+      article: 'study',
+      loading: 'is-loading',
+    };
+    this.handleOpenArticle = this.handleOpenArticle.bind(this);
+    this.handleOpenInnerArticle = this.handleOpenInnerArticle.bind(this);
+    this.handleCloseArticle = this.handleCloseArticle.bind(this);
+    this.setWrapperRef = this.setWrapperRef.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
+    if (isBrowser) {
+      window.history.pushState(
+        {
           isArticleVisible: true,
           timeout: true,
           articleTimeout: true,
           article: 'study',
-          loading: 'is-loading'
-        }
-        this.handleOpenArticle = this.handleOpenArticle.bind(this)
-        this.handleOpenInnerArticle = this.handleOpenInnerArticle.bind(this)
-        this.handleCloseArticle = this.handleCloseArticle.bind(this)
-        this.setWrapperRef = this.setWrapperRef.bind(this);
-        this.handleClickOutside = this.handleClickOutside.bind(this);
-        window.history.pushState({
-            isArticleVisible: true,
-            timeout: true,
-            articleTimeout: true,
-            article: 'study',
-            loading: 'is-loading'
-        }, null, '/');
+          loading: 'is-loading',
+        },
+        null,
+        '/'
+      );
     }
+  }
 }
 
-export default StudyPage
+export default StudyPage;
