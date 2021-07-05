@@ -47,6 +47,7 @@ const Layout = ({ children, location }) => {
           >
             <html lang="en" />
           </Helmet>
+          <base target="_blank" />
           {content}
         </>
       )}

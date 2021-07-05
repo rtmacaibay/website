@@ -30,6 +30,17 @@
             &.extra {
                 border: 1.5px solid #00543C;
             }
+
+            &.prof {
+                border: 1.5px solid #B849C7;
+            }
+
+            &.other {
+                border: 1.5px solid #A1104D;
+            }
         }
 
+        &.work {
+            float:right;
+        }
     }

@@ -5,7 +5,7 @@ import about from '../images/about.jpg'
 import pawakan from '../images/pawakan.jpg'
 import ifugao from '../images/ifugao.jpg'
 import study from '../images/study.jpg'
-import pic03 from '../images/pic03.jpg'
+import work from '../images/work.jpg'
 
 class Main extends React.Component {
   render() {
@@ -44,11 +44,11 @@ class Main extends React.Component {
             various APIs to create my projects so please feel free to check
             out <a
               className="open-work"
-              href="#"
               onClick={() => {
                 this.props.onCloseArticle()
                 this.props.onOpenArticle('work')
               }}
+              target="_self"
             >my work</a>.
           </p>
           <p>
@@ -129,23 +129,116 @@ class Main extends React.Component {
         >
           <h2 className="major">Work</h2>
           <span className="image main">
-            <img src={about} alt="" />
+            <img src={work} alt="" />
           </span>
+          <h3>
+            <a href="https://www.missionbit.org/">Mission Bit</a>
+            <span className="work">
+              08/2019 - 01/2021
+            </span>
+          </h3>
+          <h4 className="work">
+            Instructor's Assistant
+          </h4>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            Taught a class of underrepresented students how to program in C#, HTML, CSS,
+            and JavaScript, introduced students to video game development and web developement,
+            and helped students produce projects to present to industry professionals.
           </p>
+          <span className="skills">
+            <span className="skill study">
+              C#
+            </span>
+            <span className="skill study">
+              HTML
+            </span>
+            <span className="skill study">
+              CSS
+            </span>
+            <span className="skill study">
+              JavaScript
+            </span>
+            <span className="skill prof">
+              Tutoring
+            </span>
+            <span className="skill prof">
+              Teamwork
+            </span>
+          </span>
+          <h3 className="work">
+            <a href="https://www.showwcase.com/">Showwcase</a>
+            <span className="work">
+              01/2020 - 05/2020
+            </span>
+          </h3>
+          <h4 className="work">
+            Student Intern
+          </h4>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            Assigned as backend programmer with three other team members for Senior Teamwork
+            Project, worked on Clearbit integration and ElasticSearch functionality, and
+            presented progress on the platform in a CS Project Fair.
           </p>
+          <span className="skills">
+            <span className="skill study">
+              React
+            </span>
+            <span className="skill study">
+              TypeScript
+            </span>
+            <span className="skill study">
+              MySQL
+            </span>
+            <span className="skill other">
+              AWS
+            </span>
+            <span className="skill other">
+              Clearbit
+            </span>
+            <span className="skill other">
+              ElasticSearch
+            </span>
+            <span className="skill prof">
+              Teamwork
+            </span>
+            <span className="skill prof">
+              Backend Development
+            </span>
+            <span className="skill prof">
+              Time Management
+            </span>
+            <span className="skill prof">
+              Design
+            </span>
+            <span className="skill prof">
+              Database
+            </span>
+          </span>
+          <h3 className="work">
+            <a href="http://designvibe.com/">DesignVibe Media</a>
+            <span className="work">
+              06/2015 - 08/2016
+            </span>
+          </h3>
+          <h4 className="work">
+            Web Intern
+          </h4>
+          <p>
+            Trained under professional graphic designers and web designers, assisted on
+            small projects and assignments pertaining to web development, and focused on
+            organization of infomation on websites.
+          </p>
+          <span className="skills">
+            <span className="skill study">
+              HTML
+            </span>
+            <span className="skill study">
+              CSS
+            </span>
+            <span className="skill prof">
+              Web Development
+            </span>
+          </span>
           {close}
         </article>
 
@@ -232,18 +325,82 @@ class Main extends React.Component {
             <img src={study} alt="" />
           </span>
           <p>
-            I graduated in May 2020 with a B.S. in Computer Science and a minor in 
-            Music from the University of San Francisco.
+            Listed below are my current projects. All my other personal projects and school
+            projects can be found on my <a href="https://github.com/rtmacaibay">Github</a>.
           </p>
+          <h3>
+            <a href="https://github.com/rtmacaibay/yummybot">
+              Discord Bot
+            </a>
+            <span className="work">
+              03/2020 - Present
+            </span>
+          </h3>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            Created Discord bot for a personal Discord server to simplify different
+            activities. Nicknamed bot "Yummy Bot" as an inside joke within my servers.
+            Implemented several creative and humorous commands as well as useful
+            functionality. Bot previously had YouTube playback and <i>"Animal 
+            Crossing: New Horizons"</i> commands but were deprecated for
+            different reasons.
           </p>
+          <span className="skills">
+            <span className="skill study">
+              JavaScript
+            </span>
+            <span className="skill other">
+              <a href="http://acnhapi.com/">ACNH API</a>
+            </span>
+            <span className="skill other">
+              <a href="https://discord.js.org/#/">Discord.js</a>
+            </span>
+            <span className="skill other">
+              <a href="https://developers.google.com/youtube/v3">YouTube API</a>
+            </span>
+            <span className="skill other">
+              Heroku
+            </span>
+            <span className="skill other">
+              <a href="https://bonsai.io/">ElasticSearch</a>
+            </span>
+            <span className="skill other">
+              GitHub
+            </span>
+          </span>
+          <h3 className="work">
+            <a href="https://www.macaibay.com/">Personal Website</a>
+            <span className="work">
+              05/2020 - Present
+            </span>
+          </h3>
+          <p>
+            Created a personal website using a React-based wrapper, Gatsby. Just wanted
+            something that looked good and felt smooth. You're also looking at the very
+            same website.
+          </p>
+          <span className="skills">
+            <span className="skill study">
+              Gatsby
+            </span>
+            <span className="skill study">
+              React
+            </span>
+            <span className="skill study">
+              HTML
+            </span>
+            <span className="skill study">
+              CSS
+            </span>
+            <span className="skill study">
+              SCSS
+            </span>
+            <span className="skill other">
+              Heroku
+            </span>
+            <span className="skill other">
+              GitHub
+            </span>
+          </span>
           {close}
         </article>
 
@@ -255,7 +412,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="mailto:robmacaibay@gmail.com">
+          <form method="post" action="https://getform.io/f/9f5790ee-dd77-4310-a8f7-83ed50e714c6">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />

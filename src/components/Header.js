@@ -17,7 +17,7 @@ const Header = props => (
           <br />
           Specializing in Backend engines and web app development.
           <br />
-          Familiarity with Java, C/C++, JavaScript, Node.js, {'&'} SQL.
+          Familiarity with Java, C, C++, JavaScript, React, {'&'} SQL.
         </p>
       </div>
     </div>

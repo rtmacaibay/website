@@ -36,6 +36,29 @@ class IndexPage extends React.Component {
     document.removeEventListener('mousedown', this.handleClickOutside);
   }
 
+  componentDidUpdate () {
+    window.onpopstate = e => {
+      this.setState({
+        articleTimeout: !this.state.articleTimeout
+      })
+  
+      setTimeout(() => {
+        this.setState({
+          timeout: !this.state.timeout
+        })
+      }, 325)
+  
+      setTimeout(() => {
+        this.setState({
+          isArticleVisible: !this.state.isArticleVisible,
+          article: ''
+        })
+      }, 350)
+  
+      window.history.pushState(this.state, null, '/');
+    }
+  }
+
   setWrapperRef(node) {
     this.wrapperRef = node;
   }
@@ -59,6 +82,7 @@ class IndexPage extends React.Component {
       })
     }, 350)
 
+    window.history.pushState(this.state, null, '/' + article);
   }
 
   handleOpenInnerArticle(article) {
@@ -77,7 +101,8 @@ class IndexPage extends React.Component {
       })
     }, 375)
 
-  }
+    window.history.pushState(this.state, null, '/' + article);
+  } 
 
   handleCloseArticle() {
 
@@ -98,6 +123,7 @@ class IndexPage extends React.Component {
       })
     }, 350)
 
+    window.history.pushState(this.state, null, '/');
   }
 
   handleClickOutside(event) {
