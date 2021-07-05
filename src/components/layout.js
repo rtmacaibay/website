@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/scss/main.scss';
 
-import me from '../images/bigme.png';
+import me from '../images/bigme.jpg';
 
 const Layout = ({ children, location }) => {
   let content;
