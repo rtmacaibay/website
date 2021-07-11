@@ -365,10 +365,18 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
+                href="mailto:robert@macaibay.com"
+                className="icon fa-envelope"
+              >
+                <span className="label">Email</span>
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://www.linkedin.com/in/macaibay/"
                 className="icon fa-linkedin"
               >
-                <span className="label">Facebook</span>
+                <span className="label">LinkedIn</span>
               </a>
             </li>
             <li>
