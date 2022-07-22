@@ -338,6 +338,7 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
           <form
+            data-netlify="true"
             method="post"
             action="https://getform.io/f/9f5790ee-dd77-4310-a8f7-83ed50e714c6"
           >
