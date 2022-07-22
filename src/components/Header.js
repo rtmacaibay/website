@@ -13,11 +13,11 @@ const Header = props => (
       <div className="inner">
         <h1>Robert Macaibay</h1>
         <p>
-          Aspiring Software Engineer.
+          Full-Stack Engineer @ Sezzle.
           <br />
-          Specializing in Backend engines and web app development.
+          Specializing in Backend engineering and front-end development.
           <br />
-          Familiarity with Java, C, C++, JavaScript, React, {'&'} SQL.
+          Expert in Golang, Java, JavaScript, React, {'&'} SQL.
         </p>
       </div>
     </div>
