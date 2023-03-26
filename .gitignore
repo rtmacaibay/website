@@ -2,6 +2,9 @@
 .cache
 node_modules
 yarn-error.log
+gatsby
+gatsby.cmd
+gatsby.ps1
 
 # Build directory
 /public
