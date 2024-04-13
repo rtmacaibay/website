@@ -8,6 +8,7 @@
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-react-helmet": "^6.8.0",
     "gatsby-plugin-sass": "^6.8.0",
+    "grecaptcha": "^1.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
