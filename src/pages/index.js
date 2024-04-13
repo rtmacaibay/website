@@ -5,8 +5,6 @@ import Header from '../components/Header';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
 
-import grecaptcha from '@types/grecaptcha';
-
 const isBrowser = typeof window !== 'undefined';
 
 class IndexPage extends React.Component {
@@ -156,9 +154,6 @@ class IndexPage extends React.Component {
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
             />
-            <script src="https://www.google.com/recaptcha/api.js?render=6LdJm7kpAAAAAKuH5Ii7gXwyGd-F0REqiId3cohs">
-              grecaptcha.ready(function() { grecaptcha.execute('6LdJm7kpAAAAAKuH5Ii7gXwyGd-F0REqiId3cohs', {action: 'homepage'}).then(function(token) { document.getElementById('captchaResponse').value = token;}) });
-            </script>
             <Main
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
