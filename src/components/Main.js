@@ -342,6 +342,7 @@ class Main extends React.Component {
             method="post"
             action="https://getform.io/f/9f5790ee-dd77-4310-a8f7-83ed50e714c6"
           >
+            <input type="hidden" id="captchaResponse" name="g-recaptcha-response" />
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
