@@ -5,7 +5,7 @@ import me from '../images/me.png';
 import resume from '../docs/macaibay-resume.pdf';
 
 const Header = props => (
-  <header id="header" style={props.timeout ? { display: 'none' } : {}} >
+  <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
       <img src={me} alt="" />
     </div>
