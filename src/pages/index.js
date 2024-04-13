@@ -154,6 +154,9 @@ class IndexPage extends React.Component {
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
             />
+            <script src="https://www.google.com/recaptcha/api.js?render=6LdJm7kpAAAAAKuH5Ii7gXwyGd-F0REqiId3cohs">
+              grecaptcha.ready(function() { grecaptcha.execute('6LdJm7kpAAAAAKuH5Ii7gXwyGd-F0REqiId3cohs', {action: 'homepage'}).then(function(token) { document.getElementById('captchaResponse').value = token;}) });
+            </script>
             <Main
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
