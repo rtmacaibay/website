@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
 
-import grecaptcha from 'grecaptcha';
+import grecaptcha from '@types/grecaptcha';
 
 const isBrowser = typeof window !== 'undefined';
 
